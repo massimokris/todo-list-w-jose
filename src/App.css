@@ -1,9 +1,12 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,10 +17,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +37,118 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Box {
+  height: 500px;
+  width: 500px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 24px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-y: auto;
+}
+
+.Input {
+  width: 240px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  margin-right: 16px;
+  padding: 4px 0px 4px 16px;
+  font-size: 16px;
+  color: #f4f4f4;
+}
+
+.Input:focus {
+  color: white;
+  outline: none;
+}
+
+.Input-div {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Input-button {
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.Task {
+  width: 240px;
+  height: 32px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Task-elements {
+  width: 240px;
+  height: 32px;
+  margin: 0;
+  font-size: 18px;
+  color: #f4f4f4;
+}
+
+.Task-div {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Task-checkbox {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  font-size: 32px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.Task-checkbox:checked {
+  color: white;
+  background-color: #61dafb;
+}
+
+.Task-checkbox:checked:before {
+  content: "\2713";
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+h5 {
+  color: #61dafb;
 }
